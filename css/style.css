@@ -226,3 +226,10 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
+.carousel-item img {
+  max-height: 400px;
+  width: 100%;
+  object-fit: cover;
+  filter: brightness(0.2); /* Oscurece la imagen al 60% de brillo */
+}
