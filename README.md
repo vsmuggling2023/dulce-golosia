@@ -42,3 +42,6 @@ El desafío consistió en crear una página web corporativa para una pastelería
 ## 👨‍💻 Autor
 
 * **[vsmuggling2023](https://github.com/vsmuggling2023)**
+* **[softimelody](https://github.com/softimelody)**
+* **[azuscreamo](https://github.com/azuscreamo)**
+* **[valdes642](https://github.com/valdes642)**
