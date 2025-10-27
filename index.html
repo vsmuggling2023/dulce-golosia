@@ -1,135 +1,147 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dulce Golosía - Pastelería Artesanal</title>
-    
-    <link rel.preconnect" href="https://fonts.googleapis.com">
-    <link rel.preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
-    
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dulce Golosía - Pastelería Artesanal</title>
+
+  <link rel.preconnect" href="https://fonts.googleapis.com">
+  <link rel.preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Playfair+Display:wght@700&display=swap"
+    rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
-    <header class="navbar">
-        <div class="logo">
-            Dulce Golosía
+  <header class="navbar">
+    <div class="logo">
+      Dulce Golosía
+    </div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#nosotros">Sobre Nosotros</a></li>
+        <li><a href="#catalogo">Catálogo</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="inicio" class="hero">
+      <h1>El arte de compartir lo dulce</h1>
+      <p>Pastelería artesanal que celebra la tradición y la innovación en Santiago.</p>
+      <a href="#catalogo" class="cta-button">Ver Productos</a>
+    </section>
+
+    <section id="nosotros">
+      <h2>Sobre Nosotros</h2>
+      <div class="nosotros-contenido">
+        <div class="nosotros-texto">
+          <h3>Tradición e Innovación</h3>
+          <p>Dulce Golosía es una pastelería artesanal ubicada en el corazón de Santiago[cite: 2]. Celebramos la
+            repostería desde recetas clásicas hasta creaciones contemporáneas[cite: 3]. Cada producto se elabora a mano
+            con dedicación, utilizando ingredientes de calidad y origen local[cite: 4].</p>
+          <p>En nuestra carta encuentras alternativas para todos: opciones veganas, sin gluten y los placeres más
+            indulgentes[cite: 5].</p>
         </div>
-        <nav>
-            <ul class="nav-links">
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#nosotros">Sobre Nosotros</a></li>
-                <li><a href="#catalogo">Catálogo</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
+      </div>
+    </section>
 
-    <main>
-        <section id="inicio" class="hero">
-            <h1>El arte de compartir lo dulce</h1>
-            <p>Pastelería artesanal que celebra la tradición y la innovación en Santiago.</p>
-            <a href="#catalogo" class="cta-button">Ver Productos</a>
-        </section>
+    <section id="catalogo">
+      <h2>Catálogo de Productos</h2>
+      <div class="catalogo-grid">
 
-        <section id="nosotros">
-            <h2>Sobre Nosotros</h2>
-            <div class="nosotros-contenido">
-                <div class="nosotros-texto">
-                    <h3>Tradición e Innovación</h3>
-                    <p>Dulce Golosía es una pastelería artesanal ubicada en el corazón de Santiago[cite: 2]. Celebramos la repostería desde recetas clásicas hasta creaciones contemporáneas[cite: 3]. Cada producto se elabora a mano con dedicación, utilizando ingredientes de calidad y origen local[cite: 4].</p>
-                    <p>En nuestra carta encuentras alternativas para todos: opciones veganas, sin gluten y los placeres más indulgentes[cite: 5].</p>
-                </div>
-            </div>
-        </section>
+        <div class="producto-item">
+          <img src="httpsimg.com/queque-vainilla" alt="Queque de vainilla">
+          <h3>Queque de vainilla tradicional</h3>
+          <p class="descripcion">Receta casera, esponjoso y ligero[cite: 6].</p>
+          <p class="precio">$7.000</p>
+        </div>
 
-        <section id="catalogo">
-            <h2>Catálogo de Productos</h2>
-            <div class="catalogo-grid">
-                
-                <div class="producto-item">
-                    <img src="httpsimg.com/queque-vainilla" alt="Queque de vainilla">
-                    <h3>Queque de vainilla tradicional</h3>
-                    <p class="descripcion">Receta casera, esponjoso y ligero[cite: 6].</p>
-                    <p class="precio">$7.000</p>
-                </div>
-                
-                <div class="producto-item">
-                    <img src="httpsimg.com/queque-zanahoria" alt="Queque de zanahoria vegana">
-                    <h3>Queque de zanahoria vegana</h3>
-                    <p class="descripcion">Con nueces, canela y glaseado de coco[cite: 7].</p>
-                    <p class="precio">$12.000</p>
-                </div>
+        <div class="producto-item">
+          <img src="httpsimg.com/queque-zanahoria" alt="Queque de zanahoria vegana">
+          <h3>Queque de zanahoria vegana</h3>
+          <p class="descripcion">Con nueces, canela y glaseado de coco[cite: 7].</p>
+          <p class="precio">$12.000</p>
+        </div>
 
-                <div class="producto-item">
-                    <img src="httpsimg.com/empolvados" alt="Empolvados">
-                    <h3>Empolvados (2 unidades)</h3>
-                    <p class="descripcion">Delicados, rellenos de manjar y espolvoreados[cite: 8].</p>
-                    <p class="precio">$3.500</p>
-                </div>
+        <div class="producto-item">
+          <img src="httpsimg.com/empolvados" alt="Empolvados">
+          <h3>Empolvados (2 unidades)</h3>
+          <p class="descripcion">Delicados, rellenos de manjar y espolvoreados[cite: 8].</p>
+          <p class="precio">$3.500</p>
+        </div>
 
-                <div class="producto-item">
-                    <img src="httpsimg.com/brownies" alt="Brownies sin gluten">
-                    <h3>Brownies sin gluten (6 unidades)</h3>
-                    <p class="descripcion">Hechos con harina de almendra y cacao puro[cite: 13].</p>
-                    <p class="precio">$8.000</p>
-                </div>
+        <div class="producto-item">
+          <img src="httpsimg.com/brownies" alt="Brownies sin gluten">
+          <h3>Brownies sin gluten (6 unidades)</h3>
+          <p class="descripcion">Hechos con harina de almendra y cacao puro[cite: 13].</p>
+          <p class="precio">$8.000</p>
+        </div>
 
-                <div class="producto-item">
-                    <img src="httpsimg.com/tartaleta-frutas" alt="Tartaletas de frutas">
-                    <h3>Tartaletas de frutas de temporada</h3>
-                    <p class="descripcion">Base de masa quebrada, crema pastelera y frutas frescas[cite: 18].</p>
-                    <p class="precio">$9.500</p>
-                </div>
+        <div class="producto-item">
+          <img src="httpsimg.com/tartaleta-frutas" alt="Tartaletas de frutas">
+          <h3>Tartaletas de frutas de temporada</h3>
+          <p class="descripcion">Base de masa quebrada, crema pastelera y frutas frescas[cite: 18].</p>
+          <p class="precio">$9.500</p>
+        </div>
 
-                <div class="producto-item">
-                    <img src="httpsimg.com/pie-limon" alt="Pie de limón">
-                    <h3>Pie de limón tradicional</h3>
-                    <p class="descripcion">Con base de galleta y merengue casero[cite: 19].</p>
-                    <p class="precio">$7.500</p>
-                </div>
+        <div class="producto-item">
+          <img src="httpsimg.com/pie-limon" alt="Pie de limón">
+          <h3>Pie de limón tradicional</h3>
+          <p class="descripcion">Con base de galleta y merengue casero[cite: 19].</p>
+          <p class="precio">$7.500</p>
+        </div>
 
-            </div>
-        </section>
+      </div>
+    </section>
 
-        <section id="contacto">
-            <h2>Contacto</h2>
-            <div class="contacto-wrapper">
-                <div class="contacto-info">
-                    <h3>Visítanos o Escríbenos</h3>
-                    <p><strong>Dirección:</strong> Magnolia 567, Providencia, Santiago.</p>
-                    <p><strong>Teléfono:</strong> +56 987654321.</p>
-                    <p><strong>Email:</strong> contacto@dulcegolosia.cl.</p>
-                    <div class="social-links">
-                        <a href="#">Instagram</a>
-                        <a href="#">Facebook</a>
-                    </div>
-                </div>
-                
-                <form class="contact-form" action="#" method="get">
-                    <div class="form-group">
-                        <label for="nombre">Nombre</label>
-                        <input type="text" id="nombre" name="nombre" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="correo">Correo</label>
-                        <input type="email" id="correo" name="correo" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="mensaje">Mensaje</label>
-                        <textarea id="mensaje" name="mensaje" rows="5"></textarea>
-                    </div>
-                    <button type="submit" class="cta-button">Enviar (Simulado)</button>
-                </form>
-            </div>
-        </section>
-    </main>
+    <section id="contacto">
+      <h2>Contacto</h2>
+      <div class="contacto-wrapper">
+        <div class="contacto-info">
+          <h3>Visítanos o Escríbenos</h3>
+          <p><strong>Dirección:</strong> Magnolia 567, Providencia, Santiago.</p>
+          <p><strong>Teléfono:</strong> +56 987654321.</p>
+          <p><strong>Email:</strong> contacto@dulcegolosia.cl.</p>
+          <div class="social-links">
+            <a href="#">Instagram</a>
+            <a href="#">Facebook</a>
+          </div>
+        </div>
 
-    <footer>
-        <p>&copy; 2025 Dulce Golosía Ltda. | Desafío Web Santo Tomás</p>
-    </footer>
+        <form class="contact-form" action="#" method="get">
+          <div class="form-group">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" required>
+          </div>
+          <div class="form-group">
+            <label for="correo">Correo</label>
+            <input type="email" id="correo" name="correo" required>
+          </div>
+          <div class="form-group">
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" rows="5"></textarea>
+          </div>
+          <button type="submit" class="cta-button">Enviar (Simulado)</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Dulce Golosía Ltda. | Desafío Web Santo Tomás</p>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
 
 </body>
+
 </html>
