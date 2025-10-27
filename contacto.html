@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dulce Golosía - Pastelería Artesanal</title>
-
-    <link rel.preconnect" href="https://fonts.googleapis.com">
-    <link rel.preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Playfair+Display:wght@700&display=swap"
         rel="stylesheet">
@@ -15,23 +14,25 @@
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="icon" type="image/png" href="ico/icono.png">
 
+    <!-- Font Awesome para iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
     <link rel="stylesheet" href="css/contacto.css">
 </head>
-
 <body>
-<header class="navbar">
-    <a href="index.html" class="logo text-center text-lg-start" style="text-decoration: none;">
-        <img src="imagenes/logo.png" class="img-fluid w-auto" style="max-width: 125px;" alt="Logo Dulce Golosía - Inicio">
-    </a>
-    <nav>
-        <ul class="nav-links">
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="catalogo.html">Catálogo</a></li>
-            <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
-        </ul>
-    </nav>
-</header>
+    <header class="navbar">
+        <a href="index.html" class="logo text-center text-lg-start" style="text-decoration: none;">
+            <img src="imagenes/logo.png" class="img-fluid w-auto" style="max-width: 125px;" alt="Logo Dulce Golosía - Inicio">
+        </a>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="catalogo.html">Catálogo</a></li>
+                <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
 
     <section id="contacto">
         <h2>Contacto</h2>
@@ -40,18 +41,20 @@
                 <h3>Visítanos o Escríbenos</h3>
                 <p><strong>Dirección:</strong> Magnolia 567, Providencia, Santiago.</p>
                 <p><strong>Teléfono:</strong> +56 987654321.</p>
-                <p><strong>Email:</strong> contacto@dulcegolosia.cl.</p>
-                <div class="social-links">
-                    <a href="https://wa.me/56987654321" class="cta-button" target="_blank" rel="noopener noreferrer"
-                        style="margin-top: 15px; display: inline-block;">
-                        Chatear por WhatsApp
+                <p><strong>Email:</strong> contacto@dulcegolosia.cl</p>
+                <div class="social-links" style="margin-top:15px; display:flex; gap:15px;">
+                    <a href="https://wa.me/56987654321" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+                        <i class="fab fa-whatsapp fa-2x" style="color:#25d366;"></i>
                     </a>
-                    <a href="https://www.instagram.com/dulcegolosia/" class="cta-button" target="_blank"
-                        rel="noopener noreferrer" style="margin-top: 15px; display: inline-block;">
-                        Chatear por Instagram</a>
-                    <a href="https://www.facebook.com/dulcegolosia" class="cta-button" target="_blank"
-                        rel="noopener noreferrer" style="margin-top: 15px; display: inline-block;">
-                        Chatear por Facebook</a>
+                    <a href="https://www.instagram.com/dulcegolosia/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                        <i class="fab fa-instagram fa-2x" style="color:#e1306c;"></i>
+                    </a>
+                    <a href="https://www.facebook.com/dulcegolosia" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                        <i class="fab fa-facebook fa-2x" style="color:#1877f3;"></i>
+                    </a>
+                    <a href="https://www.google.com/maps/place/Magnolia+567,+Providencia,+Regi%C3%B3n+Metropolitana,+Chile" target="_blank" rel="noopener noreferrer" aria-label="Google Maps">
+                        <i class="fa-solid fa-location-dot fa-2x" style="color:#ea4335;"></i>
+                    </a>
                 </div>
             </div>
 
@@ -68,8 +71,9 @@
                     <label for="mensaje">Mensaje</label>
                     <textarea id="mensaje" name="mensaje" rows="5"></textarea>
                 </div>
-                <button type="submit" class="cta-button">Enviar (Simulado)</button>
+                <button type="submit">Enviar (Simulado)</button>
             </form>
         </div>
     </section>
 </body>
+</html>
