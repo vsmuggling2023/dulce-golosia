@@ -1,38 +1,71 @@
-<section id="contacto">
-            <h2>Contacto</h2>
-            <div class="contacto-wrapper">
-                <div class="contacto-info">
-                    <h3>Visítanos o Escríbenos</h3>
-                    <p><strong>Dirección:</strong> Magnolia 567, Providencia, Santiago.</p>
-                    <p><strong>Teléfono:</strong> +56 987654321.</p>
-                    <p><strong>Email:</strong> contacto@dulcegolosia.cl.</p>
-                    <div class="social-links">
-                        <a href="#">Instagram</a>
-                        <a href="#">Facebook</a>
-                        <a href="https://wa.me/56987654321" 
-   class="cta-button" 
-   target="_blank" 
-   rel="noopener noreferrer" 
-   style="margin-top: 15px; display: inline-block;">
-   Chatear por WhatsApp
-</a>   
-                    </div>
-                </div>
+<!DOCTYPE html>
+<html lang="es">
 
-                <form class="contact-form" action="#" method="get">
-                    <div class="form-group">
-                        <label for="nombre">Nombre</label>
-                        <input type="text" id="nombre" name="nombre" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="correo">Correo</label>
-                        <input type="email" id="correo" name="correo" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="mensaje">Mensaje</label>
-                        <textarea id="mensaje" name="mensaje" rows="5"></textarea>
-                    </div>
-                    <button type="submit" class="cta-button">Enviar (Simulado)</button>
-                </form>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dulce Golosía - Pastelería Artesanal</title>
+
+    <link rel.preconnect" href="https://fonts.googleapis.com">
+    <link rel.preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Playfair+Display:wght@700&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="icon" type="image/png" href="ico/icono.png">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="logo">
+            <img src="imagenes/logo.png" class="img-fluid" width="125px">
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#catalogo">Catálogo</a></li>
+                <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <div class="contacto-wrapper">
+            <div class="contacto-info">
+                <h3>Visítanos o Escríbenos</h3>
+                <p><strong>Dirección:</strong> Magnolia 567, Providencia, Santiago.</p>
+                <p><strong>Teléfono:</strong> +56 987654321.</p>
+                <p><strong>Email:</strong> contacto@dulcegolosia.cl.</p>
+                <div class="social-links">
+                    <a href="#">Instagram</a>
+                    <a href="#">Facebook</a>
+                    <a href="https://wa.me/56987654321" class="cta-button" target="_blank" rel="noopener noreferrer"
+                        style="margin-top: 15px; display: inline-block;">
+                        Chatear por WhatsApp
+                    </a>
+                </div>
             </div>
-        </section>
+
+            <form class="contact-form" action="#" method="get">
+                <div class="form-group">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="correo">Correo</label>
+                    <input type="email" id="correo" name="correo" required>
+                </div>
+                <div class="form-group">
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje" name="mensaje" rows="5"></textarea>
+                </div>
+                <button type="submit" class="cta-button">Enviar (Simulado)</button>
+            </form>
+        </div>
+    </section>
+</body>
