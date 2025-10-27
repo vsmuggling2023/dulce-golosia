@@ -1,140 +1,144 @@
 <!doctype html>
 <html lang="es">
+
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Plantilla Bootstrap 5.3.8</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Plantilla Bootstrap 5.3.8</title>
 
-  <!-- Bootstrap 5.3.8 CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="css/styles.css" rel="stylesheet">
-  <script src="js/script.js"></script>
+    <!-- Bootstrap 5.3.8 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <script src="js/script.js"></script>
 
-  <!-- Favicon (opcional) -->
-  <!-- <link rel="icon" type="image/png" href="favicon.png"> -->
+    <!-- Favicon (opcional) -->
+    <!-- <link rel="icon" type="image/png" href="favicon.png"> -->
 </head>
+
 <body>
-  <!-- Navbar básica -->
-  <nav class="navbar navbar-expand-lg bg-body-tertiary">
-    <div class="container">
-      <a class="navbar-brand" href="#">Mi Sitio</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link active" href="#">Inicio</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Funcionalidades</a></li>
-          <li class="nav-item"><a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#demoModal">Contacto</a></li>
-        </ul>
-      </div>
+    <!-- Navbar básica -->
+    <nav class="navbar navbar-expand-lg navbar-dulce-golosia">
+        <div class="container">
+            <a class="navbar-brand" href="#">Mi Sitio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Funcionalidades</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" data-bs-toggle="modal"
+                            data-bs-target="#demoModal">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contenido principal -->
+    <main class="container py-5">
+        <!-- Hero simple -->
+        <div class="p-5 mb-4 bg-body-tertiary rounded-3">
+            <div class="container-fluid py-5">
+                <h1 class="display-5 fw-bold">Hola, Bootstrap 5.3.8 👋</h1>
+                <p class="col-lg-8 fs-5">
+                    Esta es una plantilla base sin estilos extra. Empieza a construir y yo te cubro las espaldas.
+                </p>
+                <button class="btn btn-primary btn-lg me-2" type="button">Acción</button>
+                <button class="btn btn-outline-secondary btn-lg" type="button">Secundaria</button>
+            </div>
+        </div>
+
+        <!-- Ejemplo de grilla + card -->
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">Card 1</h5>
+                        <p class="card-text">Contenido de ejemplo para arrancar.</p>
+                        <a href="#" class="btn btn-sm btn-primary">Ver más</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">Card 2</h5>
+                        <p class="card-text">Otro bloque listo para editar.</p>
+                        <a href="#" class="btn btn-sm btn-primary">Ver más</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">Card 3</h5>
+                        <p class="card-text">Último, pero no menos importante.</p>
+                        <a href="#" class="btn btn-sm btn-primary">Ver más</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Ejemplo de formulario sencillo -->
+        <section class="mt-5">
+            <h2 class="h4 mb-3">Formulario rápido</h2>
+            <form>
+                <div class="row g-3">
+                    <div class="col-md-6">
+                        <label for="nombre" class="form-label">Nombre</label>
+                        <input type="text" id="nombre" class="form-control" placeholder="Tu nombre">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="email" class="form-label">Correo</label>
+                        <input type="email" id="email" class="form-control" placeholder="tucorreo@ejemplo.com">
+                    </div>
+                    <div class="col-12">
+                        <label for="mensaje" class="form-label">Mensaje</label>
+                        <textarea id="mensaje" class="form-control" rows="3" placeholder="¿Qué necesitas?"></textarea>
+                    </div>
+                    <div class="col-12">
+                        <button class="btn btn-success" type="submit">Enviar</button>
+                    </div>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer básico -->
+    <footer class="border-top py-4">
+        <div class="container d-flex justify-content-between align-items-center">
+            <span class="text-muted small">© <span id="year"></span> Mi Sitio. Todos los derechos reservados.</span>
+            <a href="#" class="small">Términos</a>
+        </div>
+    </footer>
+
+    <!-- Modal de ejemplo -->
+    <div class="modal fade" id="demoModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Contacto</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                    ¿Listo para construir algo épico? 💪
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <button class="btn btn-primary">Enviar</button>
+                </div>
+            </div>
+        </div>
     </div>
-  </nav>
 
-  <!-- Contenido principal -->
-  <main class="container py-5">
-    <!-- Hero simple -->
-    <div class="p-5 mb-4 bg-body-tertiary rounded-3">
-      <div class="container-fluid py-5">
-        <h1 class="display-5 fw-bold">Hola, Bootstrap 5.3.8 👋</h1>
-        <p class="col-lg-8 fs-5">
-          Esta es una plantilla base sin estilos extra. Empieza a construir y yo te cubro las espaldas.
-        </p>
-        <button class="btn btn-primary btn-lg me-2" type="button">Acción</button>
-        <button class="btn btn-outline-secondary btn-lg" type="button">Secundaria</button>
-      </div>
-    </div>
+    <!-- Bootstrap 5.3.8 JS (Bundle con Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 
-    <!-- Ejemplo de grilla + card -->
-    <div class="row g-4">
-      <div class="col-md-4">
-        <div class="card h-100">
-          <div class="card-body">
-            <h5 class="card-title">Card 1</h5>
-            <p class="card-text">Contenido de ejemplo para arrancar.</p>
-            <a href="#" class="btn btn-sm btn-primary">Ver más</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="card h-100">
-          <div class="card-body">
-            <h5 class="card-title">Card 2</h5>
-            <p class="card-text">Otro bloque listo para editar.</p>
-            <a href="#" class="btn btn-sm btn-primary">Ver más</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="card h-100">
-          <div class="card-body">
-            <h5 class="card-title">Card 3</h5>
-            <p class="card-text">Último, pero no menos importante.</p>
-            <a href="#" class="btn btn-sm btn-primary">Ver más</a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Ejemplo de formulario sencillo -->
-    <section class="mt-5">
-      <h2 class="h4 mb-3">Formulario rápido</h2>
-      <form>
-        <div class="row g-3">
-          <div class="col-md-6">
-            <label for="nombre" class="form-label">Nombre</label>
-            <input type="text" id="nombre" class="form-control" placeholder="Tu nombre">
-          </div>
-          <div class="col-md-6">
-            <label for="email" class="form-label">Correo</label>
-            <input type="email" id="email" class="form-control" placeholder="tucorreo@ejemplo.com">
-          </div>
-          <div class="col-12">
-            <label for="mensaje" class="form-label">Mensaje</label>
-            <textarea id="mensaje" class="form-control" rows="3" placeholder="¿Qué necesitas?"></textarea>
-          </div>
-          <div class="col-12">
-            <button class="btn btn-success" type="submit">Enviar</button>
-          </div>
-        </div>
-      </form>
-    </section>
-  </main>
-
-  <!-- Footer básico -->
-  <footer class="border-top py-4">
-    <div class="container d-flex justify-content-between align-items-center">
-      <span class="text-muted small">© <span id="year"></span> Mi Sitio. Todos los derechos reservados.</span>
-      <a href="#" class="small">Términos</a>
-    </div>
-  </footer>
-
-  <!-- Modal de ejemplo -->
-  <div class="modal fade" id="demoModal" tabindex="-1" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title">Contacto</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
-        </div>
-        <div class="modal-body">
-          ¿Listo para construir algo épico? 💪
-        </div>
-        <div class="modal-footer">
-          <button class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-          <button class="btn btn-primary">Enviar</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Bootstrap 5.3.8 JS (Bundle con Popper) -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-
-  <!-- Script pequeño opcional -->
-  <script>
-    // Año dinámico en el footer
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
+    <!-- Script pequeño opcional -->
+    <script>
+        // Año dinámico en el footer
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
 </body>
+
 </html>

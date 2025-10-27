@@ -1,0 +1,42 @@
+/* ==================================== */
+/* Paleta de Colores Dulce Golosía */
+/* ==================================== */
+/* Colores basados en las sugerencias (terracota, crema, verde oliva)  */
+:root {
+    --dg-crema: #F8F4E8;        /* Fondo del navbar */
+    --dg-terracota: #C4624F;    /* Color principal de texto/links */
+    --dg-verde-oliva: #A2AA8D;  /* Color de acento/hover */
+}
+
+/* ==================================== */
+/* Estilos para el Navbar de Dulce Golosía */
+/* ==================================== */
+
+.navbar-dulce-golosia {
+    /* Aplica el color crema al fondo del navbar */
+    background-color: var(--dg-crema) !important; 
+    border-bottom: 1px solid var(--dg-terracota); /* Borde sutil */
+}
+
+.navbar-dulce-golosia .navbar-brand,
+.navbar-dulce-golosia .nav-link {
+    /* Aplica el terracota a la marca y los enlaces */
+    color: var(--dg-terracota) !important; 
+    font-weight: 500;
+}
+
+.navbar-dulce-golosia .nav-link:hover,
+.navbar-dulce-golosia .nav-item .nav-link.active {
+    /* Aplica el verde oliva a los enlaces al pasar el mouse o el activo */
+    color: var(--dg-verde-oliva) !important; 
+}
+
+/* Estilo para el ícono del botón (toggler) de móviles */
+.navbar-dulce-golosia .navbar-toggler {
+    border-color: var(--dg-terracota);
+}
+
+/* Cambia el color del ícono (rayas) del toggler a terracota para que sea visible */
+.navbar-dulce-golosia .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%23C4624F' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
