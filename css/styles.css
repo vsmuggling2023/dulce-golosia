@@ -1,42 +1,206 @@
-/* ==================================== */
-/* Paleta de Colores Dulce Golosía */
-/* ==================================== */
-/* Colores basados en las sugerencias (terracota, crema, verde oliva)  */
+/* --- Importación de Fuentes (ya en el HTML) --- */
+/* font-family: 'Playfair Display', serif; (Títulos) */
+/* font-family: 'Lato', sans-serif; (Texto) */
+
+/* --- Variables de Color (según brief) --- */
 :root {
-    --dg-crema: #F8F4E8;        /* Fondo del navbar */
-    --dg-terracota: #C4624F;    /* Color principal de texto/links */
-    --dg-verde-oliva: #A2AA8D;  /* Color de acento/hover */
+    --color-crema: #FBF5E9;       /* Fondo principal sugerido */
+    --color-terracota: #D9886A;  /* Acento principal */
+    --color-verde-oliva: #707954; /* Acento secundario / Texto oscuro */
+    --color-texto: #3E3636;
+    --font-titulo: 'Playfair Display', serif;
+    --font-texto: 'Lato', sans-serif;
 }
 
-/* ==================================== */
-/* Estilos para el Navbar de Dulce Golosía */
-/* ==================================== */
-
-.navbar-dulce-golosia {
-    /* Aplica el color crema al fondo del navbar */
-    background-color: var(--dg-crema) !important; 
-    border-bottom: 1px solid var(--dg-terracota); /* Borde sutil */
+/* --- Estilos Generales --- */
+body {
+    font-family: var(--font-texto);
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-crema);
+    color: var(--color-texto);
+    line-height: 1.6;
 }
 
-.navbar-dulce-golosia .navbar-brand,
-.navbar-dulce-golosia .nav-link {
-    /* Aplica el terracota a la marca y los enlaces */
-    color: var(--dg-terracota) !important; 
-    font-weight: 500;
+/* --- Tipografía (según brief) --- */
+h1, h2, h3, .logo {
+    font-family: var(--font-titulo);
+    color: var(--color-verde-oliva);
+    margin-bottom: 1rem;
 }
 
-.navbar-dulce-golosia .nav-link:hover,
-.navbar-dulce-golosia .nav-item .nav-link.active {
-    /* Aplica el verde oliva a los enlaces al pasar el mouse o el activo */
-    color: var(--dg-verde-oliva) !important; 
+h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
 }
 
-/* Estilo para el ícono del botón (toggler) de móviles */
-.navbar-dulce-golosia .navbar-toggler {
-    border-color: var(--dg-terracota);
+/* --- Barra de Navegación --- */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
 }
 
-/* Cambia el color del ícono (rayas) del toggler a terracota para que sea visible */
-.navbar-dulce-golosia .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%23C4624F' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+.logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--color-verde-oliva);
+    font-weight: bold;
+    font-size: 1rem;
+    /* TAREA: Agrega un efecto hover (ej. color terracota) */
+}
+.nav-links a:hover {
+    color: var(--color-terracota);
+}
+
+/* --- Botón Principal (CTA) --- */
+.cta-button {
+    background-color: var(--color-terracota);
+    color: white;
+    padding: 0.8rem 1.5rem;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    display: inline-block;
+    border: none;
+    cursor: pointer;
+    font-family: var(--font-texto);
+    /* TAREA: Agrega un efecto hover */
+}
+.cta-button:hover {
+    opacity: 0.9;
+}
+
+
+/* --- Contenido Principal --- */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+}
+
+section {
+    padding: 3rem 0;
+}
+
+/* --- Hero (Inicio) --- */
+.hero {
+    text-align: center;
+    padding: 4rem 1rem;
+    /* TAREA: Considera una imagen de fondo rústica aquí */
+}
+
+/* --- Catálogo (TAREA: Hacer responsivo) --- */
+.catalogo-grid {
+    display: grid;
+    /* TAREA: Usa grid-template-columns para la responsividad */
+    /* Ejemplo: 3 columnas en escritorio, 1 en móvil */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.producto-item {
+    background-color: #fff;
+    border: 1px solid #eee;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    border-radius: 8px;
+    overflow: hidden; /* Para que la imagen respete el borde redondeado */
+    /* TAREA: Agrega una transición suave para el hover */
+}
+
+.producto-item img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover; /* Asegura que la imagen llene el espacio */
+}
+
+.producto-item h3 {
+    font-size: 1.4rem;
+    color: var(--color-texto);
+    padding: 0 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.producto-item .descripcion {
+    padding: 0 1.5rem;
+}
+
+.producto-item .precio {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: var(--color-terracota);
+    padding: 0 1.5rem 1.5rem 1.5rem;
+}
+
+/* --- Contacto (TAREA: Hacer responsivo) --- */
+.contacto-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+.contact-form .form-group {
+    margin-bottom: 1rem;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: var(--font-texto);
+}
+
+
+/* --- Footer --- */
+footer {
+    text-align: center;
+    padding: 2rem;
+    margin-top: 2rem;
+    background-color: var(--color-texto);
+    color: var(--color-crema);
+}
+
+/* --- TAREA: RESPONSIVIDAD (Req. Funcional) --- */
+@media (max-width: 768px) {
+    
+    /* TAREA: Ajusta la Navbar para móviles */
+    .nav-links {
+        /* Ejemplo simple: */
+        flex-direction: column;
+        gap: 0.5rem;
+        align-items: center;
+    }
+    .navbar {
+        flex-direction: column;
+    }
+
+    /* TAREA: Ajusta la grilla de contacto a 1 columna */
+    .contacto-wrapper {
+        grid-template-columns: 1fr;
+    }
 }
