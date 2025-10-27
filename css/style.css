@@ -112,7 +112,29 @@ section {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
 }
+/* --- REGLAS HOVER (MODIFICADAS) --- */
 
+.producto-item:hover {
+    /* 1. El fondo cambia a verde oliva */
+    background-color:rgb(54, 28, 28) ;
+    transform: translateY(-5px); 
+    box-shadow: 0 8px 15px rgba(43, 40, 40, 0.1);
+}
+
+/* 2. El título y la descripción cambian a color crema */
+.producto-item:hover h3,
+.producto-item:hover .descripcion {
+    color: var(--color-crema);
+}
+
+
+/* --- ¡MODIFICA ESTA REGLA! --- */
+/* 3. El precio cambia a terracota para 
+      que sea el punto llamativo sobre el fondo oscuro.
+*/
+.producto-item:hover .precio {
+    color: var(--color-terracota);
+}
 .producto-item {
     background-color: #fff;
     border: 1px solid #eee;
