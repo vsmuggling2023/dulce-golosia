@@ -39,7 +39,7 @@ El desafío consistió en crear una página web corporativa para una pastelería
 * **Evento:** Desafío Web 2025 (Competencia de Programación).
 * **Objetivo:** Desarrollar un sitio web estático para un cliente ficticio en 3 horas, cumpliendo con requisitos funcionales y no funcionales específicos.
 
-## 👨‍💻 Autor
+## 👨‍💻 Autores
 
 * **[vsmuggling2023](https://github.com/vsmuggling2023)**
 * **[softimelody](https://github.com/softimelody)**
